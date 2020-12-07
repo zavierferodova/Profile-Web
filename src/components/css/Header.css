@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 45rem;
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-bottom: 2.5em;    
+    background-size: cover;
+}
+
+.header .content {
+    display: flex;
+    width: 100%;
+    color: white;
+    padding: 0 5%;
+}
+
+.header .info {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.header .info:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .content .dev-name {
+    font-family: 'Rufina', serif;
+    font-weight: bold;
+    font-size: 3.8em;
+    margin-bottom: 1.5rem;
+}
+
+.header .content .dev-detail {
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.header .content .short-bio {
+    display: block;
+    width: 50%;
+    background: rgba(57, 56, 56, 0.52);
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 1257px) {
+    .header .info {
+        max-width: 60%;
+    }
+
+    .header .content .dev-name {
+        font-size: 3.2em;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header .content .dev-detail {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .header .info {
+        max-width: 60%;
+    }
+
+    .header .content .dev-name {
+        font-size: 2.5em;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header .content .dev-detail {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .header .info {
+        max-width: 100%;
+    }
+
+    .header .content .dev-name {
+        font-size: 2.2em;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header .content .dev-detail {
+        font-size: 1.1em;
+    }
+}

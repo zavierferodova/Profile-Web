@@ -1,0 +1,52 @@
+.skill-content .react-reveal:nth-child(1) {
+    width: 37.5%;
+}
+
+.skill-content .react-reveal:nth-child(2) {
+    width: 56.5%;
+}
+
+.apple-card.my-skill {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(157.25deg, #FFFFFF 4.54%, rgba(255, 255, 255, 0) 66.7%), #C4C4C4;
+}
+
+.apple-card.skill-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(359.72deg, rgba(255, 255, 255, 0.29) 46.11%, rgba(255, 255, 255, 0) 164.1%), rgba(0, 0, 0, 0.38);
+}
+
+@media only screen and (max-width: 996px) {
+    .apple-card.my-skill {
+        width: 100%;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: visible;
+        height: auto;
+    }
+
+    .skill-content .react-reveal:nth-child(1) {
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skill-content .react-reveal:nth-child(2) {
+        width: 100%;
+    }
+}
