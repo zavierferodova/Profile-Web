@@ -13,7 +13,7 @@ class Header extends React.Component {
                 <div className="content">
                     <div className="info">
                         <div className="dev-name">ZAVIER FERODOVA AL FITROH</div>
-                        <div className="dev-detail">Web Developer | Android Developer</div>
+                        <div className="dev-detail">Full Stack Web Developer | Android Developer</div>
                     </div>
                     {/*<div className="info">
                         <div className="short-bio">
