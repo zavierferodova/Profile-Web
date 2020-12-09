@@ -17,7 +17,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background: linear-gradient(178.31deg, rgba(3, 3, 3, 0.05) -7.67%, rgba(14, 13, 13, 0.6) 95.33%), url('../../images/web-context.png');
+    background: linear-gradient(178.31deg, rgba(3, 3, 3, 0.05) -7.67%, rgba(14, 13, 13, 0.6) 95.33%), url('../../images/web-context.webp');
     background-size: cover;
     background-position: center;
     color: white;
@@ -47,7 +47,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(69, 69, 69, 0) 0%, rgba(0, 0, 0, 0.26) 80.4%), url('../../images/android-context.png');    
+    background: linear-gradient(180deg, rgba(69, 69, 69, 0) 0%, rgba(0, 0, 0, 0.26) 80.4%), url('../../images/android-context.webp');    
     background-size: cover;
     background-position: center;
     color: white;
@@ -77,7 +77,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(41, 41, 41, 0) 1.04%, rgba(0, 0, 0, 0.64) 100%), url('../../images/design-context.png');
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0) 1.04%, rgba(0, 0, 0, 0.64) 100%), url('../../images/design-context.webp');
     background-size: cover;
     background-position: center;
     color: white;

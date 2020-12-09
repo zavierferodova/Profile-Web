@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/Header.css';
-import riverImage from "../../images/river-image.png";
+import riverImage from "../../images/river-image.webp";
 
 class Header extends React.Component {
     render() {
