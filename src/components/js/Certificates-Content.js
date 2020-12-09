@@ -41,12 +41,12 @@ function CertificatesContent() {
                         link="https://www.dicoding.com/certificates/N72ZDGN96ZYW" 
                         />
 
-                    <CertificateItem 
+                    {/* <CertificateItem 
                         image={machinelearningdevelopmenticon}
                         name="Study of Machine Learning Development" 
                         provider="Dicoding Indonesia"
                         link="https://www.dicoding.com/certificates/NVP7GYLDOXR0" 
-                        />
+                        /> */ }
                     
                     <CertificateItem 
                         image={pythonicon}

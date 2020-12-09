@@ -66,12 +66,12 @@ function SkillContent() {
                             percentage={75}
                             percentage_style={androidPercentageStyle} />
 
-                        <SkillItem 
+                        {/* <SkillItem 
                             icon={faMicrochip}
                             icon_style={machineLearningIconStyle}
                             name={'Machine Learning'}
                             percentage={35}
-                            percentage_style={machineLearningPercentageStyle} />
+                            percentage_style={machineLearningPercentageStyle} /> */ }
 
                         <SkillItem 
                             icon={faPalette}
