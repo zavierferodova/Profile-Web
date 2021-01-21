@@ -15,7 +15,7 @@ class Header extends React.Component {
                         <div className="dev-name">ZAVIER FERODOVA AL FITROH</div>
                         <div className="dev-detail">Full Stack Web Developer | Android Developer</div>
                     </div>
-                    {/*<div className="info">
+                    {/* <div className="info">
                         <div className="short-bio">
                             Hello I am Zavier, 17 yo Vocational High School student from Indonesia. I like much of technology especially about Artificial Intelligent.
                         </div>

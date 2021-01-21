@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer">
             <div className="row">
                 <div className="col-lg-8">
-                    <div className="web-app">Portfolio</div>
+                    <div className="web-app">Profile</div>
                     <div className="developer-name">Zavier Ferodova Al Fitroh</div>
                 </div>
                 <div className="col-lg-4 contact-social-media">
@@ -22,7 +22,7 @@ function Footer() {
                     </a>
                 </div>
                 <div className="year-updated">
-                    2020
+                    &#169;2020
                 </div>
             </div>
         </div>

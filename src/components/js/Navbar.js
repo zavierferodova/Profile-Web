@@ -21,12 +21,12 @@ function Navbar() {
     return(
         <div className="navbar" onLoad={navbarScroll()}>
             <div className="wrapper">
-                <div className="logo">Portfolio</div>
+                <div className="logo">Profile</div>
                 <div className="right-nav-button">
                     <a href="#about" className="nav-btn">About</a>
                     <a href="#technology" className="nav-btn">Technology</a>
                     <a href="#certificates" className="nav-btn">Certificates</a>
-                    <a href="#projects" className="nav-btn">Projects</a>
+                    { /* <a href="#projects" className="nav-btn">Projects</a> */ }
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ import WebTechnologyContent from "../components/js/WebTechnology-Content";
 import AndroidTechnologyContent from "../components/js/AndroidTechnology-Content";
 import DesignTechnologyContent from "../components/js/DesignTechnology-Content";
 import CertificatesContent from "../components/js/Certificates-Content";
-import ProjectsContent from "../components/js/Projects-Content";
+// import ProjectsContent from "../components/js/Projects-Content";
 import Footer from "../components/js/Footer";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       <AndroidTechnologyContent/>
       <DesignTechnologyContent/>
       <CertificatesContent/>
-      <ProjectsContent/>
+      {/* <ProjectsContent/> */}
       <Footer/>
     </div>
   );

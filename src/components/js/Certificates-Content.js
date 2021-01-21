@@ -1,6 +1,7 @@
 import '../css/Certificates-Content.css';
 import pwaicon from '../../images/pwa-icon.png';
-import frontendfundamentalicon from '../../images/front-end-fundamentals-icon.jpg';
+import frontendwebexperticon from '../../images/front-end-web-expert-icon.jpg';
+import jetpackproicon from '../../images/jetpack-pro-icon.png';
 import androidfundamentalicon from '../../images/android-fundamental-icon.png';
 import machinelearningdevelopmenticon from '../../images/machine-learning-development-icon.jpg';
 import pythonicon from '../../images/python-icon.png';
@@ -20,6 +21,14 @@ function CertificatesContent() {
                     <div className="header-text">
                         Certificates
                     </div>
+
+                    <CertificateItem 
+                        image={frontendwebexperticon}
+                        name="Become a Front-End Web Developer Expert" 
+                        provider="Dicoding Indonesia"
+                        link="https://www.dicoding.com/certificates/0LZ0D6GDQX65" 
+                        />
+                    
                     <CertificateItem 
                         image={pwaicon}
                         name="Build Progressive Web Apps" 
@@ -28,10 +37,10 @@ function CertificatesContent() {
                         />
 
                     <CertificateItem 
-                        image={frontendfundamentalicon}
-                        name="Learn the Fundamentals of Front-End Web Development" 
+                        image={jetpackproicon}
+                        name="Learn Android Jetpack Pro" 
                         provider="Dicoding Indonesia"
-                        link="https://www.dicoding.com/certificates/KERZR3O02XYV" 
+                        link="https://www.dicoding.com/certificates/ERZR51052PYV" 
                         />
 
                     <CertificateItem 
@@ -41,12 +50,12 @@ function CertificatesContent() {
                         link="https://www.dicoding.com/certificates/N72ZDGN96ZYW" 
                         />
 
-                    {/* <CertificateItem 
+                    <CertificateItem 
                         image={machinelearningdevelopmenticon}
                         name="Study of Machine Learning Development" 
                         provider="Dicoding Indonesia"
                         link="https://www.dicoding.com/certificates/NVP7GYLDOXR0" 
-                        /> */ }
+                        />
                     
                     <CertificateItem 
                         image={pythonicon}
@@ -56,17 +65,17 @@ function CertificatesContent() {
                         />
 
                     <CertificateItem 
-                        image={solidicon}
-                        name="Learn SOLID Programming Principles" 
-                        provider="Dicoding Indonesia"
-                        link="https://www.dicoding.com/certificates/QNVP7RDK4PR0" 
-                        />
-
-                    <CertificateItem 
                         image={datavisualizationicon}
                         name="Learn Basic Data Visualization" 
                         provider="Dicoding Indonesia"
                         link="https://www.dicoding.com/certificates/KERZR3OG2XYV" 
+                        />
+
+                    <CertificateItem 
+                        image={solidicon}
+                        name="Learn SOLID Programming Principles" 
+                        provider="Dicoding Indonesia"
+                        link="https://www.dicoding.com/certificates/QNVP7RDK4PR0" 
                         />
 
                     <CertificateItem 
