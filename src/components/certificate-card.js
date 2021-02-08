@@ -30,7 +30,7 @@ const certificateLevel = {
 
 function CertificateItem (props) {
   return (
-    <a href={props.link} className="certificate-card p-6 md:p-5 lg:p-8 m-2 lg:m-4 rounded-3xl">
+    <a href={props.link} className="certificate-card p-6 md:p-5 lg:p-8 m-2 lg:m-4 rounded-3xl  block">
         <div className="flex">
             <div className="icon w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 rounded-xl overflow-hidden bg-white">
                 <LazyLoad>
