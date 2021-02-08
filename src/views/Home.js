@@ -17,6 +17,7 @@ import creativeThinkImage from '../images/undraw_creative_thinking.png'
 import learnedLanguageImage from '../images/Lang-Image.png'
 import threeCircle from '../images/Three-Circle.png'
 import footerBackground from '../images/footer-background.png'
+import footerBackgroundLanscape from '../images/footer-background-lans.png'
 
 function Home () {
   return (
@@ -144,39 +145,44 @@ function Home () {
         </div>
       </div>
 
-      <div className="h-screen mt-52 pt-14 px-20"
-        style={{
-          background: `url('${footerBackground}')`
-        }}>
-          <div className="font-mirza text-right text-white text-6xl font-bold mt-28">Profile</div>
-          <div className="text-right mt-16">
-            <div className="inline-block mr-14">
+      <div className="h-screen mt-8 flex items-end">
+        <div className="absolute px-2 md:px-20 flex flex-col justify-end pt-14 w-full h-full">
+          <div className="font-mirza text-white text-5xl md:text-6xl font-bold text-right">Profile</div>
+          <div className="mt-16 text-center lg:text-right">
+            <div className="inline-block mr-14 transform translate-x-14">
 
-              <div className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
-                <div className="text-6xl">
+              <a href={'https://www.instagram.com/zavierferodova/'} className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
+                <div className="text-4xl md:text-6xl">
                   <FontAwesomeIcon icon={faInstagram}/>
                 </div>
-                <div className="font-ramabhadra text-3xl ml-6">@zavierferodova</div>
-              </div>
+                <div className="font-ramabhadra text-lg md:text-3xl ml-6">@zavierferodova</div>
+              </a>
 
-              <div className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
-                <div className="text-6xl">
+              <a href={'https://www.linkedin.com/in/zavier-ferodova-al-fitroh-8604171b1'} className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
+                <div className="text-4xl md:text-6xl">
                   <FontAwesomeIcon icon={faLinkedin}/>
                 </div>
-                <div className="font-ramabhadra text-3xl ml-6">Zavier Ferodova Al Fitroh</div>
-              </div>
+                <div className="font-ramabhadra text-lg md:text-3xl ml-6">Zavier Ferodova Al Fitroh</div>
+              </a>
 
-              <div className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
-                <div className="text-6xl">
+              <a href={'https://github.com/zavierferodova/'} className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
+                <div className="text-4xl md:text-6xl">
                   <FontAwesomeIcon icon={faGithub}/>
                 </div>
-                <div className="font-ramabhadra text-3xl ml-6">zavierferodova</div>
-              </div>
+                <div className="font-ramabhadra text-lg md:text-3xl ml-6">zavierferodova</div>
+              </a>
 
             </div>
-            <div className="bg-white h-1 mt-20"></div>
-            <div className="font-ramabhadra text-center text-white mt-2">&copy; 2021</div>
+            <div className="bg-white h-1 mt-14"></div>
+            <div className="font-ramabhadra text-center text-white mt-2 mb-5">&copy; 2021</div>
           </div>
+        </div>
+        <MediaQuery minWidth={1024}>
+          <img src={footerBackground} className="w-full lg:h-3/4 xl:h-full object-fill"/>
+        </MediaQuery>
+        <MediaQuery maxWidth={1023}>
+          <img className="object-fill w-full h-4/5" src={footerBackgroundLanscape}/>
+        </MediaQuery>
       </div>
     </div>
   )
