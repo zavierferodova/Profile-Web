@@ -125,15 +125,15 @@ function Home () {
       <div className="mt-32 sm:mt-52 flex">
         <Fade left>
           <div className="card-learned-language rounded-tr-3xl rounded-br-3xl w-4/5 lg:w-2/3 p-5 py-8 sm:p-12 ">
-            <div className="font-ramabhadra text-white text-2xl sm:text-3xl mb-5">Learned Language</div>
+            <div className="font-ramabhadra text-white text-2xl sm:text-3xl mb-5">Mastered Language</div>
             <div className="flex justify-center p-3 md:p-8">
-              <img className="object-cover w-full h-full" src={learnedLanguageImage}/>
+              <img className="object-fill w-full h-full" src={learnedLanguageImage}/>
             </div>
           </div>
         </Fade>
         <Fade>
           <div className="w-1/3 hidden sm:flex items-center">
-            <img className="ml-2 md:ml-5 relative transform p-10" src={threeCircle}/>
+            <img className="ml-2 md:ml-5 relative p-8" src={threeCircle}/>
           </div>
         </Fade>
       </div>
@@ -141,10 +141,10 @@ function Home () {
       {/* Certificates Content */}
       <div className="mt-32 sm:mt-52">
         <div className="font-ramabhadra text-big-color px-4 md:px-8 mb-12 text-4xl sm:text-5xl">Certificates</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:px-10 gap-6 m-2">
           {
             CertificateData.map((certificate, index) =>
-              <Zoom key={index} className="col-span-1">
+              <Zoom key={index} className="block col-span-1">
                 <CertificateCard
                   name={certificate.name}
                   level={certificate.level}
@@ -157,8 +157,8 @@ function Home () {
         </div>
       </div>
 
-      <div className="footer h-screen mt-8 flex items-end">
-        <div className="absolute px-2 md:px-20 flex flex-col justify-end pt-14 w-full h-full">
+      <div className="footer h-screen lg:mt-28 flex items-end">
+        <div className="absolute px-4 md:px-20 flex flex-col justify-end pt-14 w-full h-full">
           <div className="font-mirza text-white text-5xl md:text-6xl font-bold text-right">Profile</div>
           <div className="mt-16 text-center lg:text-right">
             <div className="inline-block mr-14 transform translate-x-14">

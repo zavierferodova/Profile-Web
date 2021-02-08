@@ -30,21 +30,21 @@ const certificateLevel = {
 
 function CertificateItem (props) {
   return (
-    <a href={props.link} className="certificate-card p-6 md:p-5 lg:p-8 m-2 lg:m-4 rounded-3xl  block">
-        <div className="flex">
-            <div className="icon w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 rounded-xl overflow-hidden bg-white">
-                <LazyLoad>
-                  <img className="w-full h-full object-cover" src={props.icon}/>
-                </LazyLoad>
-            </div>
-            <div className="ml-4 md:ml-5 lg:ml-8">
-                <div className="font-rubik text-white font-bold text-base md:text-lg lg:text-xl">{props.provider}</div>
-                <div className="font-rubik text-sm sm:text-lg mt-1 font-medium">{props.level}</div>
-            </div>
-        </div>
-        <div className="font-ruda mt-12 sm:mt-16 text-white font-bold text-lg md:text-xl lg:text-2xl">
-            {props.name}
-        </div>
+    <a href={props.link} className="certificate-card p-6 md:p-5 lg:p-8 lg:m-4 rounded-3xl block w-full h-full">
+      <div className="flex">
+          <div className="icon w-24 h-24 lg:w-28 lg:h-28 xl:w-36 xl:h-36 rounded-xl overflow-hidden bg-white">
+              <LazyLoad>
+                <img className="w-full h-full object-cover" src={props.icon}/>
+              </LazyLoad>
+          </div>
+          <div className="ml-4 md:ml-5 lg:ml-8">
+              <div className="font-rubik text-white font-bold text-base md:text-lg lg:text-xl">{props.provider}</div>
+              <div className="font-rubik text-sm sm:text-lg mt-1 font-medium">{props.level}</div>
+          </div>
+      </div>
+      <div className="font-ruda mt-12 sm:mt-16 text-white font-bold text-lg md:text-xl lg:text-2xl">
+          {props.name}
+      </div>
     </a>
   )
 }
