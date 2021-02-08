@@ -8,7 +8,6 @@ import Fade from 'react-reveal/Fade'
 import MediaQuery from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAndroid, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-// import { faAndroid } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe, faMicrochip, faMobile } from '@fortawesome/free-solid-svg-icons'
 
 // Image Import
@@ -16,15 +15,13 @@ import topBackground from '../images/top-background.png'
 import topBackgroundLanscape from '../images/top-background-lans.png'
 import laptopIcon from '../images/Laptop-Icon.png'
 import developerImage from '../images/developer-image.jpg'
-import creativeThinkImage from '../images/undraw_creative_thinking.png'
+import creativeThinkImage from '../images/undraw_creative_thinking.svg'
 import learnedLanguageImage from '../images/Lang-Image.png'
 import threeCircle from '../images/Three-Circle.png'
-// import footerBackground from '../images/footer-background.png'
-// import footerBackgroundLanscape from '../images/footer-background-lans.png'
 
 function Home () {
   return (
-    <div>
+    <div className="app-container">
       {/* Header Content */}
       <div className="header h-screen">
         <div className="absolute px-6 mt-5">
@@ -40,8 +37,8 @@ function Home () {
                 Full Stack Web Developer | Android Developer
               </div>
             </div>
-            <div className="w-2/4 hidden md:block">
-              <img className="w-full h-full object-contain" src={laptopIcon}/>
+            <div className="w-2/4 hidden md:block p-14">
+              <img className="w-full h-full object-cover" src={laptopIcon}/>
             </div>
           </div>
         </div>
@@ -54,34 +51,12 @@ function Home () {
       </div>
 
       {/* Developer Content */}
-      <div className="mt-24 px-6 md:px-12 lg:px-24">
-        <div className="grid grid-cols-1 md:grid-cols-5 h-auto">
-          <MediaQuery maxWidth={449}>
-            <div style={{ height: '24rem' }} className="developer-image col-span-1 md:col-span-2 rounded-3xl overflow-hidden">
-              <img className="object-cover w-full h-full" src={developerImage}/>
-            </div>
-          </MediaQuery>
-          <MediaQuery minWidth={450} maxWidth={640}>
-            <div style={{ height: '24rem' }} className="developer-image col-span-1 md:col-span-2 rounded-3xl overflow-hidden mx-16">
-              <img className="object-cover w-full h-full" src={developerImage}/>
-            </div>
-          </MediaQuery>
-          <MediaQuery minWidth={641} maxWidth={767}>
-            <div style={{ height: '28rem' }} className="developer-image col-span-1 md:col-span-2 rounded-3xl overflow-hidden mx-28">
-              <img className="object-cover w-full h-full" src={developerImage}/>
-            </div>
-          </MediaQuery>
-          <MediaQuery minWidth={768} maxWidth={1023} >
-            <div style={{ height: '25rem' }} className="developer-image col-span-1 md:col-span-2 rounded-3xl overflow-hidden">
-              <img className="object-cover w-full h-full" src={developerImage}/>
-            </div>
-          </MediaQuery>
-          <MediaQuery minWidth={1024}>
-            <div style={{ height: '30rem' }} className="developer-image rounded-3xl overflow-hidden col-span-1 md:col-span-2">
-              <img className="object-cover w-full h-full" src={developerImage}/>
-            </div>
-          </MediaQuery>
-          <div className="col-span-1 sm:col-span-3 md:ml-14 lg:ml-24 mt-12 flex flex-col justify-center h-full transform -translate-y-6">
+      <div className="mt-28 px-6 md:px-12 lg:px-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
+          <div className="developer-image col-span-1 md:col-span-1 rounded-3xl overflow-hidden">
+            <img className="object-cover w-full h-full" src={developerImage}/>
+          </div>
+          <div className="col-span-1 sm:col-span-1 m-4 md:ml-8 mt-12 flex flex-col justify-center h-full transform -translate-y-6">
             <div className="font-ramabhadra text-big-color text-3xl sm:text-4xl">Hello !</div>
             <p className="font-ramabhadra text-normal-color mt-5 text-lg sm:text-xl mb-4">
               I am Zavier, 18 y.o student and developer. I have skills to develop website and android app. I so interested with technology especially about Artficial Intelligence. And for now I started to learn about Machine Learning with Python.
@@ -91,12 +66,12 @@ function Home () {
       </div>
 
       {/* Skill Content */}
-      <div className="mt-52">
+      <div className="mt-36 md:mt-52">
         <div className="font-ramabhadra text-big-color text-center text-4xl sm:text-4xl mb-10 sm:mb-14">My Skill</div>
           <div className="grid md:grid-cols-2 mx-6 lg:mx-12">
           <Fade top>
-            <div className="col-span-1 p-4">
-              <img className="object-cover" src={creativeThinkImage}/>
+            <div className="creative-image col-span-1">
+              <img className="object-cover w-full h-full" src={creativeThinkImage}/>
             </div>
           </Fade>
           <Fade bottom>
@@ -123,9 +98,9 @@ function Home () {
       </div>
 
       {/* Learned Language Content */}
-      <div className="mt-32 sm:mt-48 flex">
+      <div className="mt-36 md:mt-48 flex">
         <Fade left>
-          <div className="card-learned-language rounded-tr-3xl rounded-br-3xl w-4/5 lg:w-2/3 p-5 py-8 sm:p-12 ">
+          <div className="card-learned-language rounded-tr-3xl rounded-br-3xl w-11/12 lg:w-2/3 p-5 py-8 sm:p-12 flex-grow-0">
             <div className="font-ramabhadra text-white text-2xl sm:text-3xl mb-5">Mastered Language</div>
             <div className="flex justify-center p-3 md:p-8">
               <img className="object-fill w-full h-full" src={learnedLanguageImage}/>
@@ -133,14 +108,14 @@ function Home () {
           </div>
         </Fade>
         <Fade>
-          <div className="w-1/3 hidden sm:flex items-center">
+          <div className="w-1/3 hidden sm:flex items-center flex-grow-0">
             <img className="ml-2 md:ml-5 relative p-12" src={threeCircle}/>
           </div>
         </Fade>
       </div>
 
       {/* Certificates Content */}
-      <div className="mt-32 sm:mt-52">
+      <div className="mt-36 md:mt-52">
         <div className="font-ramabhadra text-big-color px-4 md:px-8 mb-12 text-4xl sm:text-5xl">Certificates</div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:px-10 gap-8 m-2 md:m-7">
           {
@@ -159,30 +134,30 @@ function Home () {
       </div>
 
       <div className="mt-40 bg-gray-900 rounded-t-3xl pb-4">
-        <div className="px-4 md:px-20 pt-14 w-full">
+        <div className="px-6 md:px-20 pt-14 w-full">
           <div className="font-mirza text-5xl md:text-6xl font-bold text-right text-white">Profile</div>
           <div className="mt-16 text-center lg:text-right">
-            <div className="inline-block mr-14 transform translate-x-14">
+            <div className="inline-block mr-14 transform translate-x-10">
 
               <a href={'https://www.instagram.com/zavierferodova/'} className="flex items-center mb-4 hover:text-blue-600 cursor-pointer text-white">
-                <div className="text-4xl md:text-6xl">
+                <div className="text-3xl md:text-6xl">
                   <FontAwesomeIcon icon={faInstagram}/>
                 </div>
-                <div className="font-ramabhadra text-lg md:text-3xl ml-6">@zavierferodova</div>
+                <div className="font-ramabhadra text-base md:text-3xl ml-5">@zavierferodova</div>
               </a>
 
               <a href={'https://www.linkedin.com/in/zavier-ferodova-al-fitroh-8604171b1'} className="flex items-center mb-4 hover:text-blue-600 cursor-pointer text-white">
-                <div className="text-4xl md:text-6xl">
+                <div className="text-3xl md:text-6xl">
                   <FontAwesomeIcon icon={faLinkedin}/>
                 </div>
-                <div className="font-ramabhadra text-lg md:text-3xl ml-6">Zavier Ferodova Al Fitroh</div>
+                <div className="font-ramabhadra text-base md:text-3xl ml-5">Zavier Ferodova Al Fitroh</div>
               </a>
 
               <a href={'https://github.com/zavierferodova/'} className="flex items-center mb-4 hover:text-blue-600 cursor-pointer text-white">
-                <div className="text-4xl md:text-6xl">
+                <div className="text-3xl md:text-6xl">
                   <FontAwesomeIcon icon={faGithub}/>
                 </div>
-                <div className="font-ramabhadra text-lg md:text-3xl ml-6">zavierferodova</div>
+                <div className="font-ramabhadra text-base md:text-3xl ml-5">zavierferodova</div>
               </a>
 
             </div>
