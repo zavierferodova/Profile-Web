@@ -71,14 +71,14 @@ const CertificateData = [
   },
   {
     name: 'React Course',
-    provider: certificateProvider.dicoding,
+    provider: certificateProvider.progate,
     level: certificateLevel.beginner,
     icon: reactcourseicon,
     link: 'https://docs.google.com/viewer?url=https://d2w8fsc1wkigu3.cloudfront.net/1638971/02f75c8c4d47f4795e40cdfdceda9e97/certificates/courses/febae0403b992e33c8a9040704d0378ccourse_certificate_edd24159qfnphc.pdf'
   },
   {
     name: 'SQL Course',
-    provider: certificateProvider.dicoding,
+    provider: certificateProvider.progate,
     level: certificateLevel.beginner,
     icon: sqlcourseicon,
     link: 'https://docs.google.com/viewer?url=https://d2w8fsc1wkigu3.cloudfront.net/1638971/02f75c8c4d47f4795e40cdfdceda9e97/certificates/courses/1f92829e4cb3f065f2ab69cda0ac04aecourse_certificate_8f042e1fqfnphd.pdf'

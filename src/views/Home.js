@@ -102,7 +102,7 @@ function Home () {
         <Fade left>
           <div className="card-learned-language rounded-tr-3xl rounded-br-3xl w-11/12 lg:w-2/3 p-5 py-8 sm:p-12 flex-grow-0">
             <div className="font-ramabhadra text-white text-2xl sm:text-3xl mb-5">Mastered Language</div>
-            <div className="flex justify-center p-3 md:p-8">
+            <div className="flex justify-center p-3 md:px-20">
               <img className="object-fill w-full h-full" src={learnedLanguageImage}/>
             </div>
           </div>
