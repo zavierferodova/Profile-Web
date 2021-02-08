@@ -30,12 +30,12 @@ function CertificateItem (props) {
         <div className="flex">
             <div className="icon w-36 h-36 rounded-xl overflow-hidden bg-white">
                 <LazyLoad>
-                    <img className="w-full h-full object-cover" src={props.icon}/>
+                  <img className="w-full h-full object-cover" src={props.icon}/>
                 </LazyLoad>
             </div>
             <div className="ml-8">
                 <div className="font-rubik text-white font-bold text-xl">{props.provider}</div>
-                <div className="font-rubik text-lg mt-1">{props.level}</div>
+                <div className="font-rubik text-lg mt-1 font-medium">{props.level}</div>
             </div>
         </div>
         <div className="font-ruda mt-16 text-white font-bold text-2xl">

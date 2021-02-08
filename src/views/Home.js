@@ -3,7 +3,8 @@ import './Home.css'
 import SkillItem from '../components/skill-item'
 import CertificateCard from '../components/certificate-card'
 import CertificateData from '../constant/certificate-data'
-import { faAndroid } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAndroid, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe, faMicrochip, faMobile } from '@fortawesome/free-solid-svg-icons'
 
 // Image Import
@@ -13,6 +14,7 @@ import developerImage from '../images/developer-image.jpg'
 import creativeThinkImage from '../images/undraw_creative_thinking.png'
 import learnedLanguageImage from '../images/Lang-Image.png'
 import threeCircle from '../images/Three-Circle.png'
+import footerBackground from '../images/footer-background.png'
 
 function Home () {
   return (
@@ -81,6 +83,7 @@ function Home () {
         </div>
       </div>
 
+      {/*  Content */}
       <div className="mt-52 flex">
         <div className="card-learned-language w-2/3 p-12 pl-32 rounded-3xl transform -translate-x-24">
           <div className="font-ramabhadra text-white text-4xl mb-8">Learned Language</div>
@@ -93,7 +96,8 @@ function Home () {
         </div>
       </div>
 
-      <div className="h-screen mt-52">
+      {/* Certificates Content */}
+      <div className="mt-52">
         <div className="font-ramabhadra text-big-color px-8 mb-10 text-5xl">Certificates</div>
         <div className="grid grid-cols-2 px-10">
           {
@@ -106,6 +110,41 @@ function Home () {
             )
           }
         </div>
+      </div>
+
+      <div className="h-screen mt-52 pt-14 px-20"
+        style={{
+          background: `url('${footerBackground}')`
+        }}>
+          <div className="font-mirza text-right text-white text-6xl font-bold mt-28">Profile</div>
+          <div className="text-right mt-16">
+            <div className="inline-block mr-14">
+
+              <div className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
+                <div className="text-6xl">
+                  <FontAwesomeIcon icon={faInstagram}/>
+                </div>
+                <div className="font-ramabhadra text-3xl ml-6">@zavierferodova</div>
+              </div>
+
+              <div className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
+                <div className="text-6xl">
+                  <FontAwesomeIcon icon={faLinkedin}/>
+                </div>
+                <div className="font-ramabhadra text-3xl ml-6">Zavier Ferodova Al Fitroh</div>
+              </div>
+
+              <div className="flex text-white items-center mb-4 hover:text-blue-600 cursor-pointer">
+                <div className="text-6xl">
+                  <FontAwesomeIcon icon={faGithub}/>
+                </div>
+                <div className="font-ramabhadra text-3xl ml-6">zavierferodova</div>
+              </div>
+
+            </div>
+            <div className="bg-white h-1 mt-20"></div>
+            <div className="font-ramabhadra text-center text-white mt-2">&copy; 2021</div>
+          </div>
       </div>
     </div>
   )
