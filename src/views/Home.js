@@ -51,9 +51,9 @@ function Home () {
       </div>
 
       {/* Developer Content */}
-      <div className="mt-28 px-6 md:px-12 lg:px-24">
+      <div className="mt-28 px-6 md:px-12 lg:px-32">
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto">
-          <div className="developer-image col-span-1 md:col-span-1 rounded-3xl overflow-hidden">
+          <div className="developer-image col-span-1 md:col-span-1 rounded-3xl overflow-hidden xs:mx-10 md:mx-4 xl:mx-24">
             <img className="object-cover w-full h-full" src={developerImage}/>
           </div>
           <div className="col-span-1 sm:col-span-1 m-4 md:ml-8 mt-12 flex flex-col justify-center h-full transform -translate-y-6">
@@ -65,12 +65,82 @@ function Home () {
         </div>
       </div>
 
+      {/* Study Experience Content */}
+      <div className="mt-36 md:mt-52 px-4 md:px-8 lg:px-20">
+        <div className="font-ramabhadra text-big-color text-2xl md:text-4xl mb-12">Study Experience</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mx-14">
+          <Fade bottom>
+            <div className="col-span-1 flex">
+              <div className="w-1 flex justify-center">
+                <div className="w-4 h-4 flex-shrink-0 absolute rounded-full block bg-purple-700"></div>
+                <div className="w-full h-full flex">
+                  <div className="bg-purple-700 w-full h-full"></div>
+                </div>
+              </div>
+              <div className="ml-8 font-ramabhadra mb-6">
+                <div style={{ color: '#0063F6' }} className="text-xl lg:text-2xl">SMK Negeri 2 Surakarta</div>
+                <div style={{ color: '#3E3C3C' }} className="mb-3 text-base lg:text-lg">(2018 - Present)</div>
+                <div style={{ color: '#666565' }} className="text-sm lg:text-base">Software Engineering Departement Student</div>
+              </div>
+            </div>
+          </Fade>
+
+          <Fade bottom>
+            <div className="col-span-1 flex">
+              <div className="w-1 flex justify-center md:hidden">
+                <div className="w-4 h-4 flex-shrink-0 absolute rounded-full block bg-purple-700"></div>
+                <div className="w-full h-full flex">
+                  <div className="bg-purple-700 w-full h-full"></div>
+                </div>
+              </div>
+              <div className="ml-8 font-ramabhadra mb-6">
+                <div style={{ color: '#0063F6' }} className="text-xl lg:text-2xl">Indosat Ooredoo Digital Camp</div>
+                <div style={{ color: '#3E3C3C' }} className="mb-3 text-base lg:text-lg">(2019)</div>
+                <div style={{ color: '#666565' }} className="text-sm lg:text-base">Menjadi Android Developer Expert Scholarship at Dicoding Indonesia</div>
+              </div>
+            </div>
+          </Fade>
+
+          <Fade bottom>
+            <div className="col-span-1 flex">
+              <div className="w-1 flex justify-center">
+                <div className="w-4 h-4 flex-shrink-0 absolute rounded-full block bg-purple-700"></div>
+                <div className="w-full h-full flex">
+                  <div className="bg-purple-700 w-full h-full"></div>
+                </div>
+              </div>
+              <div className="ml-8 font-ramabhadra mb-6">
+                <div style={{ color: '#0063F6' }} className="text-xl lg:text-2xl">Lintasarta Digischool</div>
+                <div style={{ color: '#3E3C3C' }} className="mb-3 text-base lg:text-lg">(2020)</div>
+                <div style={{ color: '#666565' }} className="text-sm lg:text-base">Membangun Progressive Web Apps Scholarship at Dicoding Indonesia</div>
+              </div>
+            </div>
+          </Fade>
+
+          <Fade bottom>
+            <div className="col-span-1 flex">
+              <div className="w-1 flex justify-center md:hidden">
+                <div className="w-4 h-4 flex-shrink-0 absolute rounded-full block bg-purple-700"></div>
+                <div className="w-full h-full flex">
+                  <div className="bg-purple-700 w-full h-full"></div>
+                </div>
+              </div>
+              <div className="ml-8 font-ramabhadra mb-6">
+                <div style={{ color: '#0063F6' }} className="text-xl lg:text-2xl">Indosat Ooredoo Digital Camp</div>
+                <div style={{ color: '#3E3C3C' }} className="mb-3 text-base lg:text-lg">(2020)</div>
+                <div style={{ color: '#666565' }} className="text-sm lg:text-base">Belajar Pengembangan Machine Learning Scholarship at Dicoding Indonesia</div>
+              </div>
+            </div>
+          </Fade>
+        </div>
+      </div>
+
       {/* Skill Content */}
       <div className="mt-36 md:mt-52">
         <div className="font-ramabhadra text-big-color text-center text-4xl sm:text-4xl mb-10 sm:mb-14">My Skill</div>
           <div className="grid md:grid-cols-2 mx-6 lg:mx-12">
           <Fade top>
-            <div className="creative-image col-span-1">
+            <div className="creative-image col-span-1 xl:px-8">
               <img className="object-contain w-full h-full" src={creativeThinkImage}/>
             </div>
           </Fade>
@@ -100,23 +170,27 @@ function Home () {
       {/* Mastered Language Content */}
       <div style={{ backgroundColor: '#98CBFF' }}
         className="mt-36 md:mt-52 py-16 grid grid-cols-1 md:grid-cols-2">
-        <div className="col-span-1 row-start-2 md:row-start-auto">
-          <img className="mt-6 md:mt-0 p-8 lg:p-12 object-contain" src={masteredLanguageImage}/>
-        </div>
-        <div className="col-span-1 row-start-1 md:row-start-auto flex md:flex-col md:justify-center items-center">
-          <div className="px-6">
-            <div className="font-ramabhadra text-2xl  lg:text-4xl text-gray-800">Mastered Language</div>
-            <div style={{
-              backgroundColor: '#A119E6',
-              boxShadow: '5px 2px 4px rgba(161, 25, 230, 0.25)',
-              borderTopLeftRadius: '2rem',
-              borderBottomLeftRadius: '2rem',
-              borderTopRightRadius: '0.5rem',
-              borderBottomRightRadius: '0.5rem'
-            }}
-              className="h-4 lg:h-8 w-3/4 mt-2 md:mt-3 block"></div>
+        <Fade left>
+          <div className="col-span-1 row-start-2 md:row-start-auto">
+            <img className="mt-6 md:mt-0 p-8 lg:p-12 object-contain" src={masteredLanguageImage}/>
           </div>
-        </div>
+        </Fade>
+        <Fade right>
+          <div className="col-span-1 row-start-1 md:row-start-auto flex md:flex-col md:justify-center items-center">
+            <div className="px-6">
+              <div className="font-ramabhadra text-2xl  lg:text-4xl text-gray-800">Mastered Language</div>
+              <div style={{
+                backgroundColor: '#A119E6',
+                boxShadow: '5px 2px 4px rgba(161, 25, 230, 0.25)',
+                borderTopLeftRadius: '2rem',
+                borderBottomLeftRadius: '2rem',
+                borderTopRightRadius: '0.5rem',
+                borderBottomRightRadius: '0.5rem'
+              }}
+                className="h-4 lg:h-8 w-3/4 mt-2 md:mt-3 block"></div>
+            </div>
+          </div>
+        </Fade>
       </div>
 
       {/* Certificates Content */}
@@ -140,47 +214,51 @@ function Home () {
 
       {/* Contact Content */}
       <div className="mt-36 md:mt-52 px-4 md:px-8 lg:px-20 grid grid-cols-1 md:grid-cols-2">
-        <div className="col-span-1 mb-10">
-          <div style={{ color: '#0063F6' }} className="font-ramabhadra text-base lg:text-xl">Contact Me</div>
-          <div className="font-ramabhadra text-3xl lg:text-5xl">Let&apos;s Connect</div>
-        </div>
-        <div style={{ backgroundColor: '#F5F6F7' }} className="col-span-1 p-8 lg:p-12 px-4 lg:px-10 xl:px-16">
-          <div className="flex mt-6">
-            <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
-              <FontAwesomeIcon style={{ color: '#0063F6' }}
-                className="text-xl md:text-3xl" icon={faWhatsapp}/>
-            </div>
-            <div className="ml-3 lg:ml-4">
-              <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">WhatsApp</div>
-              <a href={'http://wa.me/+6282327613543'}
-                style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl">+62 8232 761 3543</a>
-            </div>
+        <Fade top>
+          <div className="col-span-1 mb-10">
+            <div style={{ color: '#0063F6' }} className="font-ramabhadra text-base lg:text-xl">Contact Me</div>
+            <div className="font-ramabhadra text-3xl lg:text-5xl">Let&apos;s Connect</div>
           </div>
+        </Fade>
+        <Fade bottom>
+          <div style={{ backgroundColor: '#F5F6F7' }} className="col-span-1 p-8 lg:p-12 px-4 lg:px-10 xl:px-16">
+            <div className="flex mt-6">
+              <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
+                <FontAwesomeIcon style={{ color: '#0063F6' }}
+                  className="text-xl lg:text-3xl" icon={faWhatsapp}/>
+              </div>
+              <div className="ml-3 lg:ml-4">
+                <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">WhatsApp</div>
+                <a href={'http://wa.me/+6282327613543'}
+                  style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl hover:underline focus:underline">+62 8232 761 3543</a>
+              </div>
+            </div>
 
-          <div className="flex mt-6">
-            <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
-              <FontAwesomeIcon style={{ color: '#0063F6' }}
-                className="text-base md:text-2xl" icon={faEnvelope}/>
+            <div className="flex mt-6">
+              <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
+                <FontAwesomeIcon style={{ color: '#0063F6' }}
+                  className="text-base lg:text-2xl" icon={faEnvelope}/>
+              </div>
+              <div className="ml-3 lg:ml-4 w-full flex-grow-0 truncate">
+                <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">Email</div>
+                <a href={'mailto: zavierferodova@outlook.com'}
+                  style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl hover:underline focus:underline w-full truncate">zavierferodova@outlook.com</a>
+              </div>
             </div>
-            <div className="ml-3 lg:ml-4 w-full flex-grow-0 truncate">
-              <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">Email</div>
-              <a href={'mailto: zavierferodova@outlook.com'}
-                style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl w-full truncate">zavierferodova@outlook.com</a>
-            </div>
-          </div>
 
-          <div className="flex mt-6">
-            <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
-              <FontAwesomeIcon style={{ color: '#0063F6' }}
-                className="text-xl md:text-3xl" icon={faMapMarkerAlt}/>
-            </div>
-            <div className="ml-3 lg:ml-4">
-              <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">Address</div>
-              <a href={'https://www.google.com/maps/place/Surakarta,+Surakarta+City,+Central+Java/@-7.5592076,110.7837924,13z/data=!3m1!4b1!4m5!3m4!1s0x2e7a16627ad11ab1:0xe7fe4e0454bc3095!8m2!3d-7.5754887!4d110.8243272'}
-                style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl">Surakarta, Indonesia</a>
+            <div className="flex mt-6">
+              <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
+                <FontAwesomeIcon style={{ color: '#0063F6' }}
+                  className="text-xl lg:text-3xl" icon={faMapMarkerAlt}/>
+              </div>
+              <div className="ml-3 lg:ml-4">
+                <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">Address</div>
+                <a href={'https://www.google.com/maps/place/Surakarta,+Surakarta+City,+Central+Java/@-7.5592076,110.7837924,13z/data=!3m1!4b1!4m5!3m4!1s0x2e7a16627ad11ab1:0xe7fe4e0454bc3095!8m2!3d-7.5754887!4d110.8243272'}
+                  style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl hover:underline focus:underline">Surakarta, Indonesia</a>
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
       </div>
 
       {/* Footer */}
@@ -189,7 +267,7 @@ function Home () {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
       }}
-        className="mt-40 bg-gray-900 rounded-t-3xl pt-32 pb-5 px-5 md:px-20 flex flex-wrap-reverse">
+        className="mt-40 rounded-t-3xl pt-32 pb-5 px-5 md:px-20 flex flex-wrap-reverse">
           <div className="w-full md:w-1/2 my-10 mt-14 row-start-2 flex flex-col justify-center">
             <div className="font-mirza text-5xl md:text-6xl font-bold text-white text-center md:text-left">Profile</div>
             <div className="h-1 bg-white inline-block md:hidden"></div>
