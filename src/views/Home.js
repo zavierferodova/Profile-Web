@@ -7,8 +7,8 @@ import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
 import MediaQuery from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAndroid, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faGlobe, faMicrochip, faMobile } from '@fortawesome/free-solid-svg-icons'
+import { faAndroid, faInstagram, faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGlobe, faMicrochip, faMobile, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 // Image Import
 import topBackground from '../images/top-background.png'
@@ -16,8 +16,8 @@ import topBackgroundLanscape from '../images/top-background-lans.png'
 import laptopIcon from '../images/Laptop-Icon.png'
 import developerImage from '../images/developer-image.jpg'
 import creativeThinkImage from '../images/undraw_creative_thinking.svg'
-import learnedLanguageImage from '../images/Lang-Image.png'
-import threeCircle from '../images/Three-Circle.png'
+import masteredLanguageImage from '../images/Lang-Image.png'
+import footerBackground from '../images/Footer-Background.svg'
 
 function Home () {
   return (
@@ -71,7 +71,7 @@ function Home () {
           <div className="grid md:grid-cols-2 mx-6 lg:mx-12">
           <Fade top>
             <div className="creative-image col-span-1">
-              <img className="object-cover w-full h-full" src={creativeThinkImage}/>
+              <img className="object-contain w-full h-full" src={creativeThinkImage}/>
             </div>
           </Fade>
           <Fade bottom>
@@ -90,34 +90,39 @@ function Home () {
                 icon={faMicrochip} />
               <SkillItem
                 name={'UI Design'}
-                percentage={65}
+                percentage={55}
                 icon={faMobile} />
             </div>
           </Fade>
           </div>
       </div>
 
-      {/* Learned Language Content */}
-      <div className="mt-36 md:mt-48 flex">
-        <Fade left>
-          <div className="card-learned-language rounded-tr-3xl rounded-br-3xl w-11/12 lg:w-2/3 p-5 py-8 sm:p-12 flex-grow-0">
-            <div className="font-ramabhadra text-white text-2xl sm:text-3xl mb-5">Mastered Language</div>
-            <div className="flex justify-center p-3 md:px-20">
-              <img className="object-fill w-full h-full" src={learnedLanguageImage}/>
-            </div>
+      {/* Mastered Language Content */}
+      <div style={{ backgroundColor: '#98CBFF' }}
+        className="mt-36 md:mt-52 py-16 grid grid-cols-1 md:grid-cols-2">
+        <div className="col-span-1 row-start-2 md:row-start-auto">
+          <img className="mt-6 md:mt-0 p-8 lg:p-12 object-contain" src={masteredLanguageImage}/>
+        </div>
+        <div className="col-span-1 row-start-1 md:row-start-auto flex md:flex-col md:justify-center items-center">
+          <div className="px-6">
+            <div className="font-ramabhadra text-2xl  lg:text-4xl text-gray-800">Mastered Language</div>
+            <div style={{
+              backgroundColor: '#A119E6',
+              boxShadow: '5px 2px 4px rgba(161, 25, 230, 0.25)',
+              borderTopLeftRadius: '2rem',
+              borderBottomLeftRadius: '2rem',
+              borderTopRightRadius: '0.5rem',
+              borderBottomRightRadius: '0.5rem'
+            }}
+              className="h-4 lg:h-8 w-3/4 mt-2 md:mt-3 block"></div>
           </div>
-        </Fade>
-        <Fade>
-          <div className="w-1/3 hidden sm:flex items-center flex-grow-0">
-            <img className="ml-2 md:ml-5 relative p-12" src={threeCircle}/>
-          </div>
-        </Fade>
+        </div>
       </div>
 
       {/* Certificates Content */}
       <div className="mt-36 md:mt-52">
         <div className="font-ramabhadra text-big-color px-4 md:px-8 mb-12 text-4xl sm:text-5xl">Certificates</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:px-10 gap-8 m-2 md:m-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-5 lg:px-10 gap-6 m-2 md:m-7">
           {
             CertificateData.map((certificate, index) =>
               <Zoom key={index} className="block col-span-1">
@@ -133,38 +138,77 @@ function Home () {
         </div>
       </div>
 
-      <div className="mt-40 bg-gray-900 rounded-t-3xl pb-4">
-        <div className="px-6 md:px-20 pt-14 w-full">
-          <div className="font-mirza text-5xl md:text-6xl font-bold text-right text-white">Profile</div>
-          <div className="mt-16 text-center lg:text-right">
-            <div className="inline-block mr-14 transform translate-x-10">
-
-              <a href={'https://www.instagram.com/zavierferodova/'} className="flex items-center mb-4 hover:text-blue-600 cursor-pointer text-white">
-                <div className="text-3xl md:text-6xl">
-                  <FontAwesomeIcon icon={faInstagram}/>
-                </div>
-                <div className="font-ramabhadra text-base md:text-3xl ml-5">@zavierferodova</div>
-              </a>
-
-              <a href={'https://www.linkedin.com/in/zavier-ferodova-al-fitroh-8604171b1'} className="flex items-center mb-4 hover:text-blue-600 cursor-pointer text-white">
-                <div className="text-3xl md:text-6xl">
-                  <FontAwesomeIcon icon={faLinkedin}/>
-                </div>
-                <div className="font-ramabhadra text-base md:text-3xl ml-5">Zavier Ferodova Al Fitroh</div>
-              </a>
-
-              <a href={'https://github.com/zavierferodova/'} className="flex items-center mb-4 hover:text-blue-600 cursor-pointer text-white">
-                <div className="text-3xl md:text-6xl">
-                  <FontAwesomeIcon icon={faGithub}/>
-                </div>
-                <div className="font-ramabhadra text-base md:text-3xl ml-5">zavierferodova</div>
-              </a>
-
+      {/* Contact Content */}
+      <div className="mt-36 md:mt-52 px-4 md:px-8 lg:px-20 grid grid-cols-1 md:grid-cols-2">
+        <div className="col-span-1 mb-10">
+          <div style={{ color: '#0063F6' }} className="font-ramabhadra text-base lg:text-xl">Contact Me</div>
+          <div className="font-ramabhadra text-3xl lg:text-5xl">Let&apos;s Connect</div>
+        </div>
+        <div style={{ backgroundColor: '#F5F6F7' }} className="col-span-1 p-8 lg:p-12 px-4 lg:px-10 xl:px-16">
+          <div className="flex mt-6">
+            <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
+              <FontAwesomeIcon style={{ color: '#0063F6' }}
+                className="text-xl md:text-3xl" icon={faWhatsapp}/>
             </div>
-            <div className="bg-white h-1 mt-14"></div>
-            <div className="font-ramabhadra text-white text-center mt-2">&copy; 2021</div>
+            <div className="ml-3 lg:ml-4">
+              <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">WhatsApp</div>
+              <a href={'http://wa.me/+6282327613543'}
+                style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl">+62 8232 761 3543</a>
+            </div>
+          </div>
+
+          <div className="flex mt-6">
+            <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
+              <FontAwesomeIcon style={{ color: '#0063F6' }}
+                className="text-base md:text-2xl" icon={faEnvelope}/>
+            </div>
+            <div className="ml-3 lg:ml-4 w-full flex-grow-0 truncate">
+              <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">Email</div>
+              <a href={'mailto: zavierferodova@outlook.com'}
+                style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl w-full truncate">zavierferodova@outlook.com</a>
+            </div>
+          </div>
+
+          <div className="flex mt-6">
+            <div style={{ border: '1px solid #0063F6' }} className="p-3 px-4 bg-white rounded-md flex items-center">
+              <FontAwesomeIcon style={{ color: '#0063F6' }}
+                className="text-xl md:text-3xl" icon={faMapMarkerAlt}/>
+            </div>
+            <div className="ml-3 lg:ml-4">
+              <div style={{ color: '#434242' }} className="font-ramabhadra text-sm lg:text-base">Address</div>
+              <a href={'https://www.google.com/maps/place/Surakarta,+Surakarta+City,+Central+Java/@-7.5592076,110.7837924,13z/data=!3m1!4b1!4m5!3m4!1s0x2e7a16627ad11ab1:0xe7fe4e0454bc3095!8m2!3d-7.5754887!4d110.8243272'}
+                style={{ color: '#0063F6' }} className="font-ramabhadra text-lg lg:text-2xl">Surakarta, Indonesia</a>
+            </div>
           </div>
         </div>
+      </div>
+
+      {/* Footer */}
+      <div style={{
+        background: `url(${footerBackground})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}
+        className="mt-40 bg-gray-900 rounded-t-3xl pt-32 pb-5 px-5 md:px-20 flex flex-wrap-reverse">
+          <div className="w-full md:w-1/2 my-10 mt-14 row-start-2 flex flex-col justify-center">
+            <div className="font-mirza text-5xl md:text-6xl font-bold text-white text-center md:text-left">Profile</div>
+            <div className="h-1 bg-white inline-block md:hidden"></div>
+            <div className="font-ramabhadra text-white mt-2 md:mt-3 text-center md:text-left">&copy; 2021 Zavier, All rights reserved</div>
+          </div>
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
+            <div className="font-ramabhadra row-start-1 text-2xl text-white">Follow on Socials</div>
+            <div className="mt-3">
+              <a href={'https://www.instagram.com/zavierferodova/'}>
+                <FontAwesomeIcon className="text-4xl text-white mx-5" icon={faInstagram}/>
+              </a>
+              <a href={'https://www.linkedin.com/in/zavier-ferodova-al-fitroh-8604171b1'}>
+                <FontAwesomeIcon className="text-4xl text-white mx-5" icon={faLinkedin}/>
+              </a>
+              <a href={'https://github.com/zavierferodova/'}>
+                <FontAwesomeIcon className="text-4xl text-white mx-5" icon={faGithub}/>
+              </a>
+            </div>
+          </div>
       </div>
     </div>
   )
