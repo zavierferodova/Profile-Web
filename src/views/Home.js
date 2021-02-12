@@ -227,7 +227,7 @@ function Home () {
             <div className="px-6 md:px-12 transform md:-translate-y-16">
               <div className="font-ramabhadra text-zero-to-hero text-big-color text-4xl lg:text-5xl">Zero to Hero</div>
               <div className="font-ramabhadra text-lg lg:text-2xl text-normal-color">
-                Everything started from zero, currently I was vocational high school student because of that I have little experience about tech work, but I always try learn and doing my best. I have some creations that I can show to you.
+                Everything started from zero, currently I was vocational high school student because of that I have little experience about tech work, but I always try learn and doing my best to gain more experience. I have some creations that I can show to you below.
               </div>
             </div>
           </div>
