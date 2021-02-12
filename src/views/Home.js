@@ -227,7 +227,7 @@ function Home () {
             <div className="px-6 md:px-12 transform md:-translate-y-16">
               <div className="font-ramabhadra text-zero-to-hero text-big-color text-4xl lg:text-5xl">Zero to Hero</div>
               <div className="font-ramabhadra text-lg lg:text-2xl text-normal-color">
-                Everything started from zero, currently I was vocational high school student because of that I have little experience about tech work, but I always try learn and doing my best to gain more experience. I have some creations that I can show to you below.
+                Everything started from zero, currently I was vocational high school student because of that I have little experience about tech work, but I always try learn and doing my best to gain more experiences. I have some creations that I can show to you below.
               </div>
             </div>
           </div>
@@ -237,7 +237,7 @@ function Home () {
       {/* Creations Content */}
       <div className="mt-36 md:mt-52">
         <div className="font-ramabhadra text-big-color px-4 md:px-8 mb-12 text-4xl sm:text-5xl">Creations</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 px-8 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 px-6 lg:px-12">
           {
             CreationData.map((creation, index) =>
               <Zoom key={index} className="block col-span-1">
