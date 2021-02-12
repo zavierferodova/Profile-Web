@@ -2,7 +2,9 @@ import React from 'react'
 import './Home.css'
 import SkillItem from '../components/skill-item'
 import CertificateCard from '../components/certificate-card'
+import CreationCard from '../components/creation-card'
 import CertificateData from '../constant/certificate-data'
+import CreationData from '../constant/creation-data'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
 import MediaQuery from 'react-responsive'
@@ -17,6 +19,7 @@ import laptopIcon from '../images/Laptop-Icon.png'
 import developerImage from '../images/developer-image.jpg'
 import creativeThinkImage from '../images/undraw_creative_thinking.svg'
 import masteredLanguageImage from '../images/Lang-Image.png'
+import zeroToHeroImage from '../images/zero_to_hero.png'
 import footerBackground from '../images/Footer-Background.svg'
 
 function Home () {
@@ -66,7 +69,7 @@ function Home () {
       </div>
 
       {/* Study Experience Content */}
-      <div className="mt-36 md:mt-52 px-4 md:px-8 lg:px-20">
+      <div style={{ backgroundColor: '#FAFAFA' }} className="mt-36 md:mt-52 px-4 md:px-8 lg:px-20 py-12">
         <div className="font-ramabhadra text-big-color text-2xl md:text-4xl mb-12">Study Experience</div>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-6 md:mx-14">
           <Fade bottom>
@@ -178,7 +181,7 @@ function Home () {
         <Fade right>
           <div className="col-span-1 row-start-1 md:row-start-auto flex md:flex-col md:justify-center items-center">
             <div className="px-6">
-              <div className="font-ramabhadra text-2xl  lg:text-4xl text-gray-800">Mastered Language</div>
+              <div className="font-ramabhadra text-2xl lg:text-4xl text-gray-800">Mastered Language</div>
               <div style={{
                 backgroundColor: '#A119E6',
                 boxShadow: '5px 2px 4px rgba(161, 25, 230, 0.25)',
@@ -210,6 +213,50 @@ function Home () {
             )
           }
         </div>
+      </div>
+
+      {/* Zero to Hero */}
+      <div className="mt-36 md:mt-52 grid grid-cols-1 md:grid-cols-2">
+        <Fade left>
+          <div className="col-span-1">
+            <img className="object-fill w-full h-full" src={zeroToHeroImage}/>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className="col-span-1 flex items-center mt-8 md:mt-0">
+            <div className="px-6 md:px-12 transform md:-translate-y-16">
+              <div className="font-ramabhadra text-zero-to-hero text-big-color text-4xl lg:text-5xl">Zero to Hero</div>
+              <div className="font-ramabhadra text-lg lg:text-2xl text-normal-color">
+                Everything started from zero, currently I was vocational high school student because of that I have little experience about tech work, but I always try learn and doing my best. I have some creations that I can show to you.
+              </div>
+            </div>
+          </div>
+        </Fade>
+      </div>
+
+      {/* Creations Content */}
+      <div className="mt-36 md:mt-52">
+        <div className="font-ramabhadra text-big-color px-4 md:px-8 mb-12 text-4xl sm:text-5xl">Creations</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 px-8 lg:px-12">
+          {
+            CreationData.map((creation, index) =>
+              <Zoom key={index} className="block col-span-1">
+                <CreationCard
+                  name={creation.name}
+                  type={creation.type}
+                  image={creation.image}
+                  link={creation.link} />
+              </Zoom>
+            )
+          }
+        </div>
+      </div>
+
+      {/* Want to get know me */}
+      <div style={{ backgroundColor: '#975FF2' }} className="mt-36 md:mt-52 py-20">
+        <Fade bottom>
+          <div className="font-ramabhadra text-2xl lg:text-4xl text-white text-center">Want get know about me ?</div>
+        </Fade>
       </div>
 
       {/* Contact Content */}
