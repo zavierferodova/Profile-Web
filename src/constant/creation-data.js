@@ -27,7 +27,7 @@ const CreationData = [
     name: 'Digital Note',
     type: CreationType.design,
     image: digitalNoteImg,
-    link: 'https://www.figma.com/file/eL1kGb3nWI5lQHfSsBP98k/Digital-Note'
+    link: 'https://www.figma.com/file/XvoEPwo4aPn2yagj3I2VyQ/Digital-Note'
   }
 ]
 
