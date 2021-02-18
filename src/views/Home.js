@@ -226,7 +226,7 @@ function Home () {
           <div className="col-span-1 flex items-center mt-8 md:mt-0">
             <div className="px-6 md:px-12 transform md:-translate-y-16">
               <div className="font-ramabhadra text-zero-to-hero text-big-color text-4xl lg:text-5xl">Zero to Hero</div>
-              <div className="font-ramabhadra text-lg lg:text-2xl text-normal-color">
+              <div className="font-ramabhadra text-base lg:text-xl text-normal-color">
                 Everything started from zero, currently I was vocational high school student with little experiences about tech work. I always try learn and doing my best like follow Dicoding Academy Learning Path from basic course till professional course and trying build some coding project to gain more expericences.
               </div>
             </div>
