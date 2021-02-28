@@ -3,6 +3,7 @@ import coronaStatisticImg from '../images/corona-statistic.png'
 import mbasJajanImg from '../images/mbas-jajan.png'
 import mikomikImg from '../images/mikomik.png'
 import digitalNoteImg from '../images/digital-note.png'
+import cinemaCatalogueImg from '../images/cinema-catalogue.png'
 
 const CreationData = [
   {
@@ -28,6 +29,12 @@ const CreationData = [
     type: CreationType.design,
     image: digitalNoteImg,
     link: 'https://www.figma.com/file/XvoEPwo4aPn2yagj3I2VyQ/Digital-Note'
+  },
+  {
+    name: 'Cinema Catalogue',
+    type: CreationType.android,
+    image: cinemaCatalogueImg,
+    link: 'https://drive.google.com/file/d/1sGftmqEERy--rvo5M8i-SgEhVTZkzVXj/view?usp=sharing'
   }
 ]
 
