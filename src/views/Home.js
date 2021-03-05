@@ -252,10 +252,10 @@ function Home () {
         </div>
       </div>
 
-      {/* Want to get know me */}
+      {/* Get in touch */}
       <div style={{ backgroundColor: '#975FF2' }} className="mt-36 md:mt-52 py-20">
         <Fade bottom>
-          <div className="font-ramabhadra text-2xl lg:text-4xl text-white text-center">Want get know about me ?</div>
+          <div className="font-ramabhadra text-2xl lg:text-4xl text-white text-center">Get in touch</div>
         </Fade>
       </div>
 
