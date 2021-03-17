@@ -318,7 +318,7 @@ function Home () {
           <div className="w-full md:w-1/2 my-10 mt-14 row-start-2 flex flex-col justify-center">
             <div className="font-mirza text-5xl md:text-6xl font-bold text-white text-center md:text-left">Profile</div>
             <div className="h-1 bg-white inline-block md:hidden"></div>
-            <div className="font-ramabhadra text-white mt-2 md:mt-3 text-center md:text-left">&copy; 2021 Zavier, All rights reserved</div>
+            <div className="font-ramabhadra text-white mt-2 md:mt-3 text-center md:text-left">&copy; 2021 Zavier Ferodova Al Fitroh</div>
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
             <div className="font-ramabhadra row-start-1 text-2xl text-white">Follow on Socials</div>
